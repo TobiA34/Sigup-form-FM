@@ -1,0 +1,137 @@
+:root{
+--Red: hsl(0, 100%, 74%);
+--green: hsl(154, 59%, 51%);
+--blue: hsl(248, 32%, 49%);
+--dark-blue: hsl(249, 10%, 26%);
+--grayish-blue: hsl(246, 25%, 77%);
+}
+
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body-style {
+       background: var(--Red) url(../images/bg-intro-desktop.png) top center/cover no-repeat ;
+       width: 100%;
+       height: 100vh
+}
+
+span {
+    color: #FF7979;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+    margin-top: 88px;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 300px;
+    color: white;
+}
+.info h1,p{
+    text-align: center;
+}
+
+
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+    gap: 20px;
+    width: 327px;
+    height: 442px;
+    background: #fff;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+.sign-up-input {
+    height: 56px;
+    width: 279px;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+}
+.sign-up-input:hover {
+    border: 1px solid var(--grayish-blue);
+}
+.trial-btn-purple {
+    padding: 20px;
+    width: 327px;
+    height: 88px;
+    border-radius: 8px;
+    border: none;
+    background: #5E54A4;
+    color: #fff;
+ }
+
+ .trial-btn-green {
+    background: #38CC8B;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+
+ }
+ 
+/* Media query for large screens (desktops) */
+@media (min-width: 485px) {
+
+ .info {
+    align-items: start;
+    padding: 10px;
+ }
+
+.info h1,p{
+    text-align: start;
+}
+
+.info h1 {
+    font-size: 55px;
+}
+
+.info p {
+    font-size: 16px;
+}
+
+.sign-up-form {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 474px;
+    width: 540px;
+    margin-top: 20px;
+} 
+
+.trial-btn-purple{
+    width: 540px;
+    border-radius: 8px;
+    height: 60px;
+    background:#5E54A4;
+    text-align: center;
+    border: none;
+    margin-top: 40px;
+    color: white;
+ }
+
+.main-content{
+  flex-direction: row;
+  padding: 20px;
+  margin-top: 200px;
+  justify-content: center;
+}    
+
+}
